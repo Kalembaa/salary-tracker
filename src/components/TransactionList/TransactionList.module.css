@@ -1,0 +1,77 @@
+.wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--color-surface);
+}
+
+.th,
+.td {
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+  white-space: nowrap;
+}
+
+.th {
+  color: var(--color-text-secondary);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.row:hover {
+  background: #f8fafc;
+}
+
+.type {
+  font-weight: 700;
+}
+
+.income {
+  color: var(--color-success);
+}
+
+.expense {
+  color: var(--color-danger);
+}
+
+.amount {
+  font-weight: 700;
+}
+
+.comment {
+  max-width: 260px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.actions {
+  display: flex;
+  gap: var(--spacing-xs);
+}
+
+.actionButton {
+  padding: 7px 10px;
+  border: 1px solid var(--color-border);
+  border-radius: 7px;
+  background: white;
+}
+
+.actionButton:hover {
+  background: var(--color-background);
+}
+
+.deleteButton {
+  color: var(--color-danger);
+}
+
+@media (max-width: 700px) {
+  .th,
+  .td {
+    padding: 10px;
+  }
+}
